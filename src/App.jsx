@@ -4,7 +4,9 @@ import { CotizadorProvider } from "./context/CotizadorProvider"
 
 function App() {
   return (
-    <CotizadorProvider>
+    <CotizadorProvider
+    value={{}}
+    >
       <AppSeguro />
     </CotizadorProvider>
     
