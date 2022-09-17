@@ -1,9 +1,9 @@
-import {Fragment, useContext } from 'react'
+import {Fragment } from 'react'
 import { MARCAS, YEARS, PLANES } from '../constants'
-import CotizadorContext from '../context/CotizadorProvider'
+import useCotizador from '../hooks/useCotizador'
 
 const Formulario = () => {
-    const {modal, cambiarState } = useContext(CotizadorContext)
+    const {modal, cambiarState } =  useCotizador()
     console.log(modal)
   return (
     <>
