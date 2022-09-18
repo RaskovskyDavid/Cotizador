@@ -5,7 +5,7 @@ import { MARCAS, PLANES } from '../constants'
 const Resultado = () => {
     const {resultado, datos} = useCotizador()
     const { marca, plan, year } = datos
-    const [nombreMarca] = useCallback( 
+    const [nombreMarca] = useMemo( () =>
         MARCAS.filter(m => m.id === Number(marca) ), 
         [ resultado]
     )
